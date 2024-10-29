@@ -20,14 +20,14 @@
 </div>
 
 <h4 align="center">
-  <a href="https://github.com/the-swift-collective/webp/actions/workflows/swift-ubuntu.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/the-swift-collective/webp/swift-ubuntu.yml?style=flat-square&label=ubuntu%20&labelColor=E95420&logoColor=FFFFFF&logo=ubuntu">
+  <a href="https://github.com/the-swift-collective/libwebp/actions/workflows/swift-ubuntu.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/the-swift-collective/libwebp/swift-ubuntu.yml?style=flat-square&label=ubuntu%20&labelColor=E95420&logoColor=FFFFFF&logo=ubuntu">
   </a>
-  <a href="https://github.com/the-swift-collective/webp/actions/workflows/swift-macos.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/the-swift-collective/webp/swift-macos.yml?style=flat-square&label=macOS&labelColor=000000&logo=apple">
+  <a href="https://github.com/the-swift-collective/libwebp/actions/workflows/swift-macos.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/the-swift-collective/libwebp/swift-macos.yml?style=flat-square&label=macOS&labelColor=000000&logo=apple">
   </a>
-  <a href="https://github.com/the-swift-collective/webp/actions/workflows/swift-windows.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/the-swift-collective/webp/swift-windows.yml?style=flat-square&label=windows&labelColor=357EC7&logo=gitforwindows">
+  <a href="https://github.com/the-swift-collective/libwebp/actions/workflows/swift-windows.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/the-swift-collective/libwebp/swift-windows.yml?style=flat-square&label=windows&labelColor=357EC7&logo=gitforwindows">
   </a>
 </h4>
 
@@ -37,15 +37,15 @@
 
 </div>
 
-##### To use webp in swift, add webp as a package dependency in your project's Package.swift file.
+##### To use webp in swift, add libwebp as a package dependency in your project's Package.swift file.
 ```swift
 dependencies: [
-  .package(url: "https://github.com/the-swift-collective/webp.git", from: "1.4.0"),
+  .package(url: "https://github.com/the-swift-collective/libwebp.git", from: "1.4.0"),
 ]
 ```
 
 
-##### Then, for any target you'd like, add the webp product as a target dependency, a complete example.
+##### Then, for any target you'd like, add the libwebp product as a target dependency, a complete example.
 ```swift
 // swift-tools-version: 5.8
 import PackageDescription
@@ -59,14 +59,14 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(url: "https://github.com/the-swift-collective/webp.git", from: "1.4.0")
+    .package(url: "https://github.com/the-swift-collective/libwebp.git", from: "1.4.0")
   ],
   targets: [
     .target(
       name: "MyLibrary",
       dependencies: [
         /* add the webp product as a library dependency. */
-        .product(name: "WebP", package: "webp"),
+        .product(name: "WebP", package: "libwebp"),
       ]
     ),
   ]
@@ -78,4 +78,4 @@ let package = Package(
 <hr/>
 
 ###### ***the swift collective** - cross platform **swift packages**.*
-###### webp is licensed under the terms of the [BSD 3-Clause "New" or "Revised" License](https://www.webmproject.org/license/software/).
+###### libwebp is licensed under the terms of the [BSD 3-Clause "New" or "Revised" License](https://www.webmproject.org/license/software/).

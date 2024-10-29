@@ -6,7 +6,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "webp",
+  name: "libwebp",
   products: [
     .library(
       name: "libwebp",
