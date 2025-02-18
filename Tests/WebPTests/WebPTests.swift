@@ -4,6 +4,9 @@
 import XCTest
 
 @testable import WebP
+@testable import libwebp
+@testable import sharpyuv
+@testable import imageioutil
 
 class WebPTests: XCTestCase {
   func testWebPVersion() throws {
